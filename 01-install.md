@@ -48,13 +48,14 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I installed python 3.5 because I learned python fairly recently and 3 is what I'm used to. I have looked at code in 2, and it seems the difference is some deprecated functions and slight format difference. Also I believe IDE such as PyCharm allows you to choose the verion of interpreter. 
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+
+>> python --version
 
  
 

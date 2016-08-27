@@ -60,7 +60,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Emacs. I've used it before.
 
 --
 
@@ -68,6 +68,9 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Mostly PyCharm, but I found that the debugger in spyder is a little easier to use. 
+   PyCharm provides smart code completion, highlights possible errors and refactors code.
+   Ctrl+Shift+e allows you to run selected portion code in console, Ctrl+D/Y copies/deletes the current line.
+   I pretty much used the default settings, but did install a few packages that are not there.  
 
  

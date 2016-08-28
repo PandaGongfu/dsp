@@ -1,7 +1,6 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
-
 def match_ends(words):
     """
     Given a list of strings, return the count of the number of strings
@@ -15,8 +14,8 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
-
+    long_words = [x for x in words if len(x) > 1]
+    return sum([True if x[0] == x[-1] else False for x in long_words])
 
 def front_x(words):
     """
@@ -32,8 +31,7 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
-
+    return sorted([x for x in words if 'x' == x[0]]) + sorted([x for x in words if 'x' != x[0]])
 
 def sort_last(tuples):
     """
@@ -49,8 +47,7 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
-
+    return sorted(tuples, key=lambda x: x[-1])
 
 def remove_adjacent(nums):
     """
@@ -68,7 +65,10 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    if len(nums) < 2:
+        return nums
+    else:
+        return [nums[0]] + [x for k, x in enumerate(nums[1:]) if x != nums[k]]
 
 
 def linear_merge(list1, list2):
@@ -85,4 +85,24 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    list1_remaining = list1
+    list_merge = []
+    k = 0
+    while len(list2):
+        w2 = list2[0]
+        list1_remaining = list1_remaining[k:]
+        if (not len(list1_remaining)) or (w2 > list1_remaining[-1]):
+            break
+
+        for k, w1 in enumerate(list1_remaining):
+            if w2 <= w1:
+                list_merge.extend(list1_remaining[:k])
+                list_merge.append(w2)
+                list2.pop(0)
+                break
+
+    list_merge.extend(list1_remaining)
+    if len(list2):
+        list_merge.extend(list2)
+
+    return list_merge

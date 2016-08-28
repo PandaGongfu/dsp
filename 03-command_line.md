@@ -25,7 +25,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > 'ls' = list files in the current directory  'ls -a' = do not ignore entries starting with .  'ls -l' = use a long listing format  'ls -lh' = print sizes in human readable format  'ls -lah' list files including hidden files in human readable format  'ls -t' = list files sorted by the time they were last modified  'ls -Glp' = use long listing, append '/' to directories and don't print group names
+>> 'ls' = list files in the current directory  
+  'ls -a' = do not ignore entries starting with .
+  'ls -l' = use a long listing format  
+  'ls -lh' = print sizes in human readable format  
+  'ls -lah' list files including hidden files in human readable format  
+  'ls -t' = list files sorted by the time they were last modified  
+  'ls -Glp' = use long listing, append '/' to directories and don't print group names
 
 ---
 
@@ -33,7 +39,8 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > Option | Description
+> > 
+    Option | Description
     ------ | -----------
     -c | Displays files by timestamp
     -m | Display the names as a comma-separated list
@@ -48,8 +55,10 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 What does `xargs` do? Give an example of how to use it.
 
 > > UNIX does not accept a long list of arguments from standard input, xargs divides it into small list when used in combination of find and grep.
-    ```console  
+
+    ```  
     find . -name '*.py' | xargs grep 'graph'
     ```
+
     This will find the word 'graph' in all py file from the current directory and below.
 

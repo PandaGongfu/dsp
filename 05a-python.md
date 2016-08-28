@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Tuples are basically lists that are cannot be modified. Only tuples can be keys in dictionaries because of their immutability. Dictionaries hash their keys and the contents of the keys cannot be changing, otherwise hashing does not work. 
 
 ---
 
@@ -20,15 +20,26 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> Sets are unordered lists with unique elements, and they can only contain hashable items.  
+   Unlike a list,  
+   ``` 
+   set([6,2,4,4]) == set([2,4,6])
+   ```
+   Like a list, a set also supports comprehension.  
+   ```
+   set(x for x in 'abrcdra' if x not in 'abc')
+   ```
+   Sets are much faster for lookup because they use hash table so it's O(1) time versus O(n) of lists.
 ---
 
 ###Q3. Lambda Function
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> A `lambda` function is basically a function without a name. Because python supports functional programming, lambda functions can be combined other functions and therefore, extremely useful.   
+   ```
+   sorted(list(range(3,15)), key = lambda x: x/(math.log(x)**2))
+   ``` 
 
 ---
 
@@ -36,7 +47,19 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions provide a succinct and elegant syntax for tranforming lists.   
+   ```
+   odd_power = [n**2 for n in nums if n%2]
+   odd_power = map(lambda x: x**2, filter(lambda x: x%2, nums))
+   ```
+   The above two lines produce duplicate results.
+   However, map and filter can handle more complicated conditions with the assistance of lambda functions, for instance, if the condition is expressed in if..elif..else, list comprehension may not be able to handle it.  
+   Set comprehension has been demonstrated in Q2.   
+   Dict comprehension is shown below:
+   ```
+   dict((k, k) for k in nums)
+   ```
+
 
 ---
 
@@ -51,7 +74,7 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 917
 
 b.  
 ```
@@ -59,7 +82,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 513
 
 c.  
 ```
@@ -67,7 +90,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+>> 7850
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 

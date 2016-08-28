@@ -1,5 +1,6 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
+import re
 
 
 def donuts(count):
@@ -18,8 +19,8 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
-
+    count_str = str(count) if count < 10 else 'many'
+    return 'Number of donuts: ' + count_str
 
 def both_ends(s):
     """
@@ -37,7 +38,7 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    return '' if len(s) < 2 else s[:2] + s[-2:]
 
 
 def fix_start(s):
@@ -56,7 +57,7 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    return s[0] + s[1:].replace(s[0], '*')
 
 
 def mix_up(a, b):
@@ -74,8 +75,7 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
-
+    return b[:2] + a[2:] + ' ' + a[:2] + b[2:]
 
 def verbing(s):
     """
@@ -91,8 +91,10 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
-
+    if len(s) < 3:
+        return s
+    else:
+        return s + 'ly' if s[-3:] == 'ing' else s + 'ing'
 
 def not_bad(s):
     """
@@ -111,7 +113,29 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    # not quite exact if there are multiple punctuations in the string
+    if ('bad' in s) and ('not' in s):
+        words = re.findall(r"[\w']+|[.,;:?!]", s)
+        not_index = -1
+        bad_index = -1
+        for k, word in enumerate(words):
+            if 'not' == word:
+                not_index = k
+            if 'bad' == word:
+                if not_index == -1:
+                    return s
+                else:
+                    bad_index = k
+                    break
+        if bad_index == -1:
+            return s
+        else:
+            if words[bad_index+1] in '.,;:?!':
+                return ' '.join(words[:not_index] + ['good']) + words[bad_index+1] + ' '.join(words[bad_index+2:])
+            else:
+                return ' '.join(words[:not_index] + ['good'] + words[bad_index+1:])
+    else:
+        return s
 
 
 def front_back(a, b):
@@ -130,4 +154,10 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    pair = [a, b]
+    cutoff = []
+    for s in pair:
+        cutoff.append(len(s)//2 + 1 if len(s) % 2 else len(s)/2)
+
+    return(''.join([x[:cutoff[j]] for j, x in enumerate(pair)]) + ''.join([x[cutoff[j]:] for j, x in enumerate(pair)]))
+

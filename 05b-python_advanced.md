@@ -87,10 +87,11 @@ faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['P
 ```
 Print the first 3 key and value pairs of the dictionary:
 
->> Landis [['B.S.Ed. M.S. Ph.D.', 'Professor', 'jrlandis@mail.med.upenn.edu']]   
+>> ```
+   Landis [['B.S.Ed. M.S. Ph.D.', 'Professor', 'jrlandis@mail.med.upenn.edu']]   
    Bilker [['Ph.D.', 'Professor', 'warren@upenn.edu']]   
    Shinohara [['0', 'Assistant Professor', 'rshi@mail.med.upenn.edu']]
-
+   ```
 
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
@@ -100,14 +101,15 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> ('Mingyao', 'Li') ['Ph.D.', 'Associate Professor', 'mingyao@mail.med.upenn.edu']   
+>>``` 
+('Mingyao', 'Li') ['Ph.D.', 'Associate Professor', 'mingyao@mail.med.upenn.edu']   
 ('Rui', 'Xiao') ['PhD', 'Assistant Professor', 'rxiao@mail.med.upenn.edu']   
 ('Alisa', 'Stephens') ['Ph.D.', 'Assistant Professor', 'alisaste@mail.med.upenn.edu']   
-
+```
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Print out the dictionary key value pairs based on alphabetical orders of the last name of the professors
 
->>    
+>>```   
 ('Scarlett', 'Bellamy') ['Sc.D.', 'Associate Professor', 'bellamys@mail.med.upenn.edu']   
 ('Warren', 'Bilker') ['Ph.D.', 'Professor', 'warren@upenn.edu']   
 ('Matthew', 'Bryan') ['PhD', 'Assistant Professor', 'bryanma@upenn.edu']   
@@ -145,7 +147,7 @@ Print the first 3 key and value pairs of the dictionary:
 ('Dawei', 'Xie') ['PhD', 'Assistant Professor', 'dxie@upenn.edu']   
 ('Sharon', 'Xie') ['Ph.D.', 'Associate Professor', 'sxie@mail.med.upenn.edu']   
 ('Wei', 'Yang') ['Ph.D.', 'Assistant Professor', 'weiyang@mail.med.upenn.edu']
-
+```
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 
 --- 

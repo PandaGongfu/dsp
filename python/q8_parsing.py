@@ -10,4 +10,4 @@ import pandas as pd
 EPL_data = pd.read_csv('football.csv')
 EPL_data['diff'] = abs(EPL_data['Goals'] - EPL_data['Goals Allowed'])
 min_index = EPL_data['diff'].argmin()
-print(EPL_data.ix[7, 'Team'])
+print(EPL_data.ix[min_index, 'Team'])

@@ -9,7 +9,8 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 1. *pushd/popd dir* = switch directory  2. *touch file* = create empty file  3. *mv old new* = rename file or folder  4. *man cmd* = find help for command  5. *wc file* = wordcount  6. *less file* = show content of file  7. *export/echo var* = set new env variable  8. *env | grep name* = find env variables containing name 9. *grep word file* = find word in file  10. *grep -E exp file* = find word using reg expression  
+    
 
 ---
 
@@ -24,7 +25,7 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 'ls' = list files in the current directory  'ls -a' = do not ignore entries starting with .  'ls -l' = use a long listing format  'ls -lh' = print sizes in human readable format  'ls -lah' list files including hidden files in human readable format  'ls -t' = list files sorted by the time they were last modified  'ls -Glp' = use long listing, append '/' to directories and don't print group names
 
 ---
 
@@ -32,7 +33,13 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > Option | Description
+    ------ | -----------
+    -c | Displays files by timestamp
+    -m | Display the names as a comma-separated list
+    -r | Displays files in reverse order
+    -x | Displays files as rows across the screen
+    -1 | Displays each entry on a line 
 
 ---
 
@@ -40,7 +47,9 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
- 
+> > UNIX does not accept a long list of arguments from standard input, xargs divides it into small list when used in combination of find and grep.
+    ```console  
+    find . -name '*.py' | xargs grep 'graph'
+    ```
+    This will find the word 'graph' in all py file from the current directory and below.
 

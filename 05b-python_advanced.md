@@ -19,7 +19,7 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> ```
+>> 
    Degree | Frequency
    ------ | ---------
    BSEd	  | 1
@@ -31,19 +31,19 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
    PhD	  | 31
    ScD	  | 6
    NA	  | 1
-   ```
+   
 
 
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
->> ```
+>> 
    Title | Frequency
    ----- | ---------
    Assistant Professor | 12
    Associate Professor | 12
    Professor | 13
-   ```
+   
 
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
@@ -107,25 +107,26 @@ Print the first 3 key and value pairs of the dictionary:
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Print out the dictionary key value pairs based on alphabetical orders of the last name of the professors
 
->> ('Scarlett', 'Bellamy') ['Sc.D.', 'Associate Professor', 'bellamys@mail.med.upenn.edu']   
+>>    
+('Scarlett', 'Bellamy') ['Sc.D.', 'Associate Professor', 'bellamys@mail.med.upenn.edu']   
 ('Warren', 'Bilker') ['Ph.D.', 'Professor', 'warren@upenn.edu']   
 ('Matthew', 'Bryan') ['PhD', 'Assistant Professor', 'bryanma@upenn.edu']   
 ('Jinbo', 'Chen') ['Ph.D.', 'Associate Professor', 'jinboche@upenn.edu']   
-('Jonas', 'Ellenberg') ['Ph.D.', 'Professor', 'jellenbe@mail.med.upenn.edu']   
+('Jonas', 'Ellenberg') ['Ph.D.', 'Professor', 'jellenbe@mail.med.upenn.edu']      
 ('Susan', 'Ellenberg') ['Ph.D.', 'Professor', 'sellenbe@upenn.edu']   
 ('Rui', 'Feng') ['Ph.D', 'Assistant Professor', 'ruifeng@upenn.edu']   
 ('Benjamin', 'French') ['PhD', 'Associate Professor', 'bcfrench@mail.med.upenn.edu']   
 ('Phyllis', 'Gimotty') ['Ph.D', 'Professor', 'pgimotty@upenn.edu']   
-('Wensheng', 'Guo') ['Ph.D', 'Professor', 'wguo@mail.med.upenn.edu']   
+('Wensheng', 'Guo') ['Ph.D', 'Professor', 'wguo@mail.med.upenn.edu']    
 ('Yenchih', 'Hsu') ['Ph.D.', 'Assistant Professor', 'hsu9@mail.med.upenn.edu']   
-('Rebecca', 'Hubbard') ['PhD', 'Associate Professor', 'rhubb@mail.med.upenn.edu']   
-('Wei-Ting', 'Hwang') ['Ph.D.', 'Associate Professor', 'whwang@mail.med.upenn.edu']   
+('Rebecca', 'Hubbard') ['PhD', 'Associate Professor', 'rhubb@mail.med.upenn.edu']      
+('Wei-Ting', 'Hwang') ['Ph.D.', 'Associate Professor', 'whwang@mail.med.upenn.edu']    
 ('Marshall', 'Joffe') ['MD MPH Ph.D', 'Professor', 'mjoffe@mail.med.upenn.edu']   
-('J.', 'Landis') ['B.S.Ed. M.S. Ph.D.', 'Professor', 'jrlandis@mail.med.upenn.edu']   
+('J.', 'Landis') ['B.S.Ed. M.S. Ph.D.', 'Professor', 'jrlandis@mail.med.upenn.edu']      
 ('Hongzhe', 'Li') ['Ph.D', 'Professor', 'hongzhe@upenn.edu']   
 ('Mingyao', 'Li') ['Ph.D.', 'Associate Professor', 'mingyao@mail.med.upenn.edu']   
 ('Yimei', 'Li') ['Ph.D.', 'Assistant Professor', 'liy3@email.chop.edu']   
-('A.', 'Localio') ['JD MA MPH MS PhD', 'Associate Professor', 'rlocalio@upenn.edu']   
+('A.', 'Localio') ['JD MA MPH MS PhD', 'Associate Professor', 'rlocalio@upenn.edu']    
 ('Nandita', 'Mitra') ['Ph.D.', 'Associate Professor', 'nanditam@mail.med.upenn.edu']   
 ('Knashawn', 'Morales') ['Sc.D.', 'Associate Professor', 'knashawn@mail.med.upenn.edu']   
 ('Kathleen', 'Propert') ['Sc.D.', 'Professor', 'propert@mail.med.upenn.edu']   

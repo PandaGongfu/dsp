@@ -9,8 +9,17 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > 1. *pushd/popd dir* = switch directory  2. *touch file* = create empty file  3. *mv old new* = rename file or folder  4. *man cmd* = find help for command  5. *wc file* = wordcount  6. *less file* = show content of file  7. *export/echo var* = set new env variable  8. *env | grep name* = find env variables containing name 9. *grep word file* = find word in file  10. *grep -E exp file* = find word using reg expression  
-    
+> > 1. *pushd/popd dir* = switch directory  
+    2. *touch file* = create empty file  
+    3. *mv old new* = rename file or folder  
+    4. *man cmd* = find help for command  
+    5. *wc file* = wordcount  
+    6. *less file* = show content of file  
+    7. *export/echo var* = set new env variable  
+    8. *env | grep name* = find env variables containing name 
+    9. *grep word file* = find word in file  
+    10. *grep -E exp file* = find word using reg expression  
+      
 
 ---
 
@@ -54,11 +63,10 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > UNIX does not accept a long list of arguments from standard input, xargs divides it into small list when used in combination of find and grep.
-
+> > UNIX does not accept a long list of arguments from standard input, xargs divides it into small list when used in combination of find and grep.  
+    
     ```  
     find . -name '*.py' | xargs grep 'graph'
-    ```
-
+    ```  
     This will find the word 'graph' in all py file from the current directory and below.
 

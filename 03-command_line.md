@@ -7,7 +7,7 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 
 ###Q1.  Cheat Sheet of Commands  
 
-Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
+Make a *cheat sheet* for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
 > >   
     1. *pushd/popd dir* = switch directory  
@@ -35,13 +35,14 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
->> 'ls' = list files in the current directory  
-  'ls -a' = do not ignore entries starting with .
-  'ls -l' = use a long listing format  
-  'ls -lh' = print sizes in human readable format  
-  'ls -lah' list files including hidden files in human readable format  
-  'ls -t' = list files sorted by the time they were last modified  
-  'ls -Glp' = use long listing, append '/' to directories and don't print group names
+> > 
+  `ls` list files in the current directory  
+  `ls -a` do not ignore entries starting with .  
+  `ls -l` use a long listing format  
+  `ls -lh` print sizes in human readable format  
+  `ls -lah` list files including hidden files in human readable format  
+  `ls -t` list files sorted by the time they were last modified  
+  `ls -Glp` use long listing, append '/' to directories and don't print group names
 
 ---
 
@@ -64,7 +65,8 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > UNIX does not accept a long list of arguments from standard input, xargs divides it into small list when used in combination of find and grep.      
+> > 
+    UNIX does not accept a long list of arguments from standard input, xargs divides it into small list when used in combination of find and grep.      
     ```  
     find . -name '*.py' | xargs grep 'graph'
     ```  

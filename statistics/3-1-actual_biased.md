@@ -4,7 +4,8 @@
 actual mean:  1.02420515504
 biased mean:  2.40367910066
 ```
-![Actual vs Biased](Biased.png)
+![Actual vs Biased](Biased.png)   
+
     import chap01soln
     import thinkplot
     

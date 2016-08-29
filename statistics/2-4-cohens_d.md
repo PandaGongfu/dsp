@@ -16,3 +16,4 @@ Cohen d -0.088672927072602
     
     d = thinkstats2.CohenEffectSize(firsts.totalwgt_lb, others.totalwgt_lb)
     print('Cohen d', d)
+```

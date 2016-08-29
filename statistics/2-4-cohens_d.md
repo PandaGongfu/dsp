@@ -3,9 +3,7 @@
 >> 
 ```
 Cohen d -0.088672927072602
-```
->>
-```
+
     import nsfg
     import thinkstats2
     

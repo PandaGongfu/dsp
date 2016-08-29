@@ -87,7 +87,6 @@ How do frequentist and Bayesian statistics compare?
 
 >> Frequentists assume that true parameters are fixed and they can be measured using repeatable random samples.  
 On constrast, Bayesians assume that the true parameters are unknown and they can described probabilistically using fixed data observerd from the realized sample.   
-    
 Therefore, the interpretation of the statistics are different. A 95% confidence interval for example, from frequentists view, can be interpreted as follows: if we repeat the procedure multiple times, and calcuate a different confidence interval everytime, 95% of these realized intervals cover the true population parameter.   
 But for Baysians, a 95% confidence interval means 95% of the time the population parameter falls within this particular interval. 
 

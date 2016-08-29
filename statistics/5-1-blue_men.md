@@ -2,7 +2,7 @@
 
 >> ```
 Percentage is 34.27
-```   
+```
     import scipy
     
     hi = scipy.stats.norm.cdf((6*12+1)/39.3700787*100, 178, 7.7)

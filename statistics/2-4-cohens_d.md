@@ -4,6 +4,7 @@
 ```
 Cohen d -0.088672927072602
 ```
+>>
 ```python
 import nsfg
 import thinkstats2

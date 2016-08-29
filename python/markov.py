@@ -56,9 +56,7 @@ def train_model(words):
 
 # random assign the next weight based on weights in ngrams
 def weighted_choice(ngram, key):
-    if len(key) == 1:
-        filtered = {k: v for k, v in ngram.items() if k[0] == key}
-    elif len(key) == 2:
+    if len(key):
         filtered = {k: v for k, v in ngram.items() if k[:-1] == key}
     else:
         filtered = ngram
@@ -89,7 +87,7 @@ def generate_bigram(markov_text, monogram, bigram):
     markov_text += ' '
     markov_text += first
 
-    second = weighted_choice(bigram, first)
+    second = weighted_choice(bigram, tuple(first))
     if second not in punctuation:
         markov_text += ' '
     markov_text += second
@@ -103,12 +101,10 @@ def generate_txt(ngrams, nwords):
 
     markov_text, (first, second) = generate_bigram(markov_text, monogram, bigram)
     count_words = 2
-    count_none = 0
     while count_words < nwords:
         third = weighted_choice(trigram, (first, second))
         if not len(third):
             markov_text, (first, second) = generate_bigram(markov_text, monogram, bigram)
-            count_none += 1
             count_words += 2
         else:
             if third not in punctuation:

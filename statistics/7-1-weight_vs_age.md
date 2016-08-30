@@ -5,6 +5,8 @@
 ```
 Pearson Correlation is 0.069
 Spearman Correlation is 0.095   
+```
+>>
     import nsfg
     import thinkstats2
     import numpy as np

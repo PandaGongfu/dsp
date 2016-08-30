@@ -7,7 +7,6 @@ pearson skewness:  0.736125801914
 fraction below mean:  0.660005879567   
 ![stats vs max income](img/stat_upper.png)   
 As shown in the above graph, mean increases exponetially with the log10 based upper bound. Skewness increases linearly, median stays flat and Pearson skewness shows a slight decrease. The evidence suggests that median and Pearson skewness are robust to outliers but mean and skewness are vulnerable.   
-
     import hinc2
     import hinc
     import numpy as np

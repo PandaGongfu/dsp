@@ -37,4 +37,3 @@ Spearman Correlation is 0.095
     
     print('Pearson Correlation is %5.3f' % thinkstats2.Corr(live.page, live.totalwgt_lb))
     print('Spearman Correlation is %5.3f' % thinkstats2.SpearmanCorr(live.page, live.totalwgt_lb))
-``

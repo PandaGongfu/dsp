@@ -5,7 +5,7 @@
 ```
 Pearson Correlation is 0.069
 Spearman Correlation is 0.095   
-```   
+   
     import nsfg
     import thinkstats2
     import numpy as np
@@ -37,3 +37,4 @@ Spearman Correlation is 0.095
     
     print('Pearson Correlation is %5.3f' % thinkstats2.Corr(live.page, live.totalwgt_lb))
     print('Spearman Correlation is %5.3f' % thinkstats2.SpearmanCorr(live.page, live.totalwgt_lb))
+``

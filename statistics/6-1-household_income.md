@@ -1,9 +1,9 @@
 [Think Stats Chapter 6 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2007.html#toc60) (household income)
 
->> mean:  74278.7075312
-median:  51226.4544789
-skewness:  4.94992024443
-pearson skewness:  0.736125801914
+>> mean:  74278.7075312   
+median:  51226.4544789   
+skewness:  4.94992024443   
+pearson skewness:  0.736125801914   
 fraction below mean:  0.660005879567   
 ![stats vs max income](img/stat_upper.png)   
 As shown in the above graph, mean increases exponetially with the log10 based upper bound. Skewness increases linearly, median stays flat and Pearson skewness shows a slight decrease. The evidence suggests that median and Pearson skewness are robust to outliers but mean and skewness are vulnerable.   

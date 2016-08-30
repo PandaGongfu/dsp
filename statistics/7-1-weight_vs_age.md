@@ -4,7 +4,7 @@
 ![birth weight vs mother's age](img/scatter.png)   
 ```
 Pearson Correlation is 0.069
-Spearman Correlation is 0.095
+Spearman Correlation is 0.095   
     import nsfg
     import thinkstats2
     import numpy as np

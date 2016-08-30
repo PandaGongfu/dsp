@@ -2,7 +2,7 @@
 
 >> pvalue for pregnancy length: 0.164   
 pvalue for birth weight: 0.0  
-There pvalues are very close to those under the permutation model. So using resampling does not appear to have a significant effect on the results.  
+These pvalues are very close to those under the permutation model. So using resampling does not appear to have a significant effect on the results.  
 ![resampling cdf](img/resample.png)   
 The CDF graph also looks similar.   
     
